@@ -1,14 +1,12 @@
 import { defineConfig } from 'astro/config';
-import icon from 'astro-icon';
 import tailwind from '@astrojs/tailwind';
+import icon from 'astro-icon';
 
 export default defineConfig({
   site: 'https://jmutale5.github.io',
-  base: '/data-science-portfolio', 
+  base: '/data-science-portfolio',
   integrations: [
-    icon(), 
-    tailwind() // Simplified this line
+    tailwind(), 
+    icon()
   ],
 });
-
-  
