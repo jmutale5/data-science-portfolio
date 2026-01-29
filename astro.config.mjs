@@ -4,6 +4,11 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://jmutale5.github.io',
-  base: '/data-science-portfolio', 
-  integrations: [icon(), tailwind()],
+  base: '/data-science-portfolio',
+  integrations: [
+    icon(), 
+    tailwind({
+      applyBaseStyles: false,
+    })
+  ],
 });
