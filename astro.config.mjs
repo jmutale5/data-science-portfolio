@@ -1,13 +1,9 @@
 import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
-import tailwindcss from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  // Replace with your actual GitHub URL later
-  site: 'https://joanmutale.github.io',
-  base: 'ds-portfolio',
-  integrations: [icon()],
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  site: 'https://jmutale5.github.io',
+  base: '/data-science-portfolio', 
+  integrations: [icon(), tailwind()],
 });
